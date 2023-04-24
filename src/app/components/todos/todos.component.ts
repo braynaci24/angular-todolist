@@ -6,9 +6,10 @@ import { Todo } from './../../models/Todo';
   styleUrls: ['./todos.component.css']
 })
 export class TodosComponent implements OnInit {
-  todos: Todo[];
+  todos: Todo[] = [];
   inputTodo: string = "";
-  @ViewChild('todoInput') todoInput: ElementRef<HTMLInputElement>;
+  @ViewChild('todoInput')
+  todoInput!: ElementRef<HTMLInputElement>;
 
   constructor() { }
 
